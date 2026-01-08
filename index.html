@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav | Full Stack Engineer</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+<div  class="Page" >
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="motion-bar">
+    <span id="motionProgress"></span>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Gaurav<span>.</span>Portfolio</div>
+
+    <nav id="nav">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fa-solid fa-moon" id="themeToggle"></i>
+      <i class="fa-solid fa-bars" id="menu"></i>
+    </div>
+  </header>
+
+  <!-- TECH STRIP -->
+  <div class="tech-strip">
+    <div class="tech-track">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>APIs</span>
+      <span>System Design</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <h1>
+        Building <span>Scalable</span>, <span>Performant</span> &
+        <span>Production-Grade</span> Web Solutions
+      </h1>
+
+      <p>
+        Hi, I'm <strong>Gaurav</strong> — a Full Stack Engineering Student focused on
+        <span class="hl">Web Systems</span>,
+        <span class="hl">APIs</span>,
+        <span class="hl">System Design</span> &
+        <span class="hl">Business-Driven Software</span>.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="images/resume.pdf" class="btn outline" download>Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img
+        src="images/profile.png"
+        alt="Developer workspace"
+      />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p id="aboutText"></p>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <h2>Journey</h2>
+    <div class="timeline" id="journeyData"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid" id="skillsData"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid" id="projectsData"></div>
+  </section>
+
+  <!-- LEARNING -->
+  <section id="learning">
+    <h2>Currently Learning</h2>
+    <p class="section-sub">
+      Sharpening skills that scale products, systems, and businesses.
+    </p>
+    <div class="grid" id="learningData"></div>
+  </section>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="contact-sub">
+    Let’s build something impactful — ideas, products, or scalable systems.
+  </p>
+
+  <div class="contact-wrapper">
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+      <h3>Connect with me</h3>
+      <p>
+        I’m open to internships, collaborations, and meaningful tech discussions.
+        Drop a message and I’ll get back to you.
+      </p>
+
+      <!-- DIRECT DETAILS -->
+      <p><strong>Email:</strong> gauravthakur2054@gmail.com</p>
+      <p><strong>Phone:</strong> +91 8692029659</p>
+
+      <!-- SOCIAL LINKS -->
+      <div class="contact-links">
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gaurav-thakur-684b662a6/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:gauravthakur2054@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form class="contact-form" id="contactForm">
+  <!-- FormSubmit config -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="📩 New Portfolio Contact Message">
+  <input type="hidden" name="_replyto">
+
+  <div class="field">
+    <label>Name</label>
+    <input type="text" name="Name" placeholder="Your name" required>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <input
+      type="email"
+      name="Email"
+      placeholder="you@example.com"
+      required
+      oninput="document.querySelector('[name=_replyto]').value=this.value"
+    >
+  </div>
+
+  <div class="field">
+    <label>Message</label>
+    <textarea
+      name="Message"
+      rows="4"
+      placeholder="Tell me about your idea..."
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="btn primary">
+    Send Message
+  </button>
+</form>
+
+<!-- Success Animation -->
+
+<div class="form-success" id="formSuccess">
+  <div class="success-card">
+    <div class="checkmark">
+      ✓
+    </div>
+    <h3>Message Sent</h3>
+    <p>Thanks for reaching out. I’ll get back to you shortly.</p>
+  </div>
+</div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Gaurav | Engineered with Precision</p>
+  </footer>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
